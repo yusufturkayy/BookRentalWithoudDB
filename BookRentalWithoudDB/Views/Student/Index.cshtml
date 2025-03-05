@@ -1,0 +1,26 @@
+﻿@model List<Student>
+<table>
+    <thead>
+        <tr>
+            <td> ID </td>
+            <td> Name </td>
+            <td> Surname </td>
+            <td> </td>
+        </tr>
+    </thead>
+<tbody>
+    @foreach(var item in Model) {
+
+    <tr>
+        <td> @item.ID </td>
+        <td> @item.Name </td>
+        <td> @item.Surname </td>
+        <td><a asp-controller="Student" asp-action="Detail" 
+            asp-route-id="@item.ID"> Click For Detail </a></td>
+    </tr>
+
+     }
+
+</tbody>
+</table>
+

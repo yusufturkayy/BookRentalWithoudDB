@@ -1,0 +1,28 @@
+﻿@model Student
+
+<form method="post" asp-action="create" asp-controller="Student" >
+
+    <table>
+        <tr>
+            <td width="200">ID</td>
+            <td><input asp-for="ID" /></td>
+        </tr>
+        <tr>
+            <td width="200">Name</td>
+            <td><input asp-for="Name" /></td>
+        </tr>
+        <tr>
+            <td width="200">Surname</td>
+            <td><input asp-for="Surname" /></td>
+        </tr>
+        <tr>
+            <td width="200">Birth Date</td>
+            <td><input asp-for="BirthDate" /></td>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="Create" /> </td>
+            <td> </td>
+        </tr>
+    </table>
+
+</form>

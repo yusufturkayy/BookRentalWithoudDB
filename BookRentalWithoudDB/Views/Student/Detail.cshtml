@@ -1,0 +1,19 @@
+﻿@model Student
+
+<table>
+    <tr>
+        <td width="200">ID</td><td>@Model.ID</td>
+    </tr>
+    <tr>
+        <td width="200">Name</td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td width="200">Surname</td>
+        <td>@Model.Surname</td>
+    </tr>
+    <tr>
+        <td width="200">Birth Date</td>
+        <td>@Model.BirthDate.ToLongDateString()</td>
+    </tr>
+</table>
